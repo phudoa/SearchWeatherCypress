@@ -3,6 +3,7 @@
         "e2e": "cypress open"
     },
     "devDependencies": {
+        "cypress": "^7.3.0",
         "cypress-image-snapshot": "^4.0.1"
     }
 }
