@@ -1,0 +1,5 @@
+node_modules/
+cypress/Attachment/
+cypress/Reports/FinalReport
+cypress/Reports/Mochawesome
+debug.log
