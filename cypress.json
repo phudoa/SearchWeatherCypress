@@ -1,0 +1,17 @@
+{
+  "baseUrl": "https://openweathermap.org/weathermap",
+  "chromeWebSecurity": true,
+  "fixturesFolder": "cypress/datasets",
+  "integrationFolder": "cypress/tests",
+  "pluginsFile": "cypress/plugins",
+  "supportFile": "cypress/actions",
+  "video": true,
+  "videosFolder": "cypress/Attachment/Videos",
+  "screenshotsFolder": "cypress/screenshots",
+  "execTimeout": 60000,
+  "requestTimeout": 5000,
+  "responseTimeout": 30000,
+  "viewportHeight": 660,
+  "viewportWidth": 1000,
+  "projectId": "a69uoa"
+}
