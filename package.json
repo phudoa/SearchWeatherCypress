@@ -3,11 +3,19 @@
         "e2e": "cypress open",
         "cy:dashboard:parallel": "npx cypress run --record --key 99702c77-c357-49ce-8732-9d97c70c056c --parallel",
         "cy:dashboard": "npx cypress run --record --key 99702c77-c357-49ce-8732-9d97c70c056c",
-        "cy:run:layout":"npx cypress run --spec 'cypress/tests/layout.spec.js'",
-        "cy:run:weather_search":"npx cypress run --spec 'cypress/tests/search_weather.spec.js'"
+        "cy:run:layout": "npx cypress run --spec 'cypress/tests/layout.spec.js'",
+        "cy:run:weather_search": "npx cypress run --spec 'cypress/tests/search_weather.spec.js'",
+        "cy:run:all": "npx cypress run --spec 'cypress/tests/*'",
+        "cy:report:combine": "npx mochawesome-merge cypress/reports/Mochawesome/*.json -o cypress/reports/finalreport/result.json",
+        "cy:report:generate": "npx marge cypress/reports/finalreport/result.json -f result -o cypress/reports/finalreport",
+        "cy:report:remove": "node cypress/reports/reportconfig/removereports.js"
     },
     "devDependencies": {
         "cypress": "^7.3.0",
-        "cypress-image-snapshot": "^4.0.1"
+        "cypress-image-snapshot": "^4.0.1",
+        "cypress-multi-reporters": "^1.5.0",
+        "mochawesome": "^6.2.2",
+        "mochawesome-merge": "^4.2.0",
+        "mochawesome-report-generator": "^5.2.0"
     }
 }

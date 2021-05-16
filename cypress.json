@@ -13,5 +13,9 @@
   "responseTimeout": 30000,
   "viewportHeight": 660,
   "viewportWidth": 1000,
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+      "configFile": "cypress/Reports/ReportConfig/reporterOptions.json"
+  },
   "projectId": "a69uoa"
 }
