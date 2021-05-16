@@ -1,6 +1,10 @@
 {
     "scripts": {
-        "e2e": "cypress open"
+        "e2e": "cypress open",
+        "cy:dashboard:parallel": "npx cypress run --record --key 99702c77-c357-49ce-8732-9d97c70c056c --parallel",
+        "cy:dashboard": "npx cypress run --record --key 99702c77-c357-49ce-8732-9d97c70c056c",
+        "cy:run:layout":"npx cypress run --spec 'cypress/tests/layout.spec.js'",
+        "cy:run:weather_search":"npx cypress run --spec 'cypress/tests/search_weather.spec.js'"
     },
     "devDependencies": {
         "cypress": "^7.3.0",
