@@ -1,4 +1,4 @@
-Cypress.config('defaultCommandTimeout', 60000)
+Cypress.config('defaultCommandTimeout', 10000)
 
 context('Search Weather Feature',{ viewportHeight: 768, viewportWidth: 1024 },()=>{
     it('SER_008 - Verify the current weather of cities in case the search criteria by city name matches one city',()=>{

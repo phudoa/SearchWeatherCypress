@@ -47,5 +47,3 @@ Cypress.Commands.add('enterACityOnDesktopView',(cityName)=>{
                         .clear()
                         .type(`${cityName}{Enter}`, {delay : 20})
 })
-
-

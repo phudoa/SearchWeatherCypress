@@ -7,4 +7,5 @@ export default {
     'desktopMenu':'[id="desktop-menu"]',
     'iconSearch':'[role="search"]',
     'iptSearch':'input[type="text"]'
+    
 }

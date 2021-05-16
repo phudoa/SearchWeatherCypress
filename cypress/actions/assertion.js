@@ -7,6 +7,7 @@ function getNumberInString(string, startStr, endStr){
 
 Cypress.Commands.add('verifyWeatherOfYourCity', (yourCity) => {
     let parameters = [`q=${yourCity}`]
+    
     //get the current weather info of the city by API
     cy.apiWeatherByCity(parameters).then(res => {
         let cityName = res.body["name"]
