@@ -6,3 +6,4 @@ To run this project you need to follow below steps after downloading the project
 3. Open command line
 4. Install Cypress with cmd "npm install"
 5. Run Cypress with Test Runer with cmd "npx cypress open"
+6. Run a spec file in comand line with cmd "npm run cy:run:layout" / "npm run cy:run:weather_search"
