@@ -1,7 +1,6 @@
 import * as iSearch from '../interface/isearch'
 
 context('Search Weather Feature',()=>{
-    
     //Verify the search Feature layout on responsive design
     const screenMobileSizes = ['iphone-5', 'samsung-s10', 'iphone-x', 'ipad-mini', [1366, 768], [1440, 900]];  
     screenMobileSizes.forEach(size => {
